@@ -11,10 +11,37 @@ app.get("/", (req, res) => {
     var responseObject = {
         status: true,
         data: { text: "hello" }
-    }
-    console.log("asodakosdkopaks")
+    } 
     res.json(responseObject);
 });
+
+app.listen(port, () => {
+   console.log("application is listening on:", port);
+});
+
+
+
+app.get("/", (req, res) => {
+    var responseObject = {
+        status: true,
+        data: { text: "hello" }
+    } 
+    res.json(responseObject);
+});
+
+
+app.get("/cpgateway", (req, res) => {
+    console.log(req.body)
+    res.send(req.body)
+});
+
+app.post("/cpgateway", (req, res) => {
+    console.log(req.body)
+    res.send(req.body)
+});
+
+
+
 
 app.listen(port, () => {
    console.log("application is listening on:", port);
