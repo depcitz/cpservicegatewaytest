@@ -19,12 +19,14 @@ app.get("/", (req, res) => {
 
 app.get("/cpgateway", (req, res) => {
     console.log(req.body)
-    res.send(req.body)
+    res.send("success cpgateway get")
 });
+
+
 
 app.post("/cpgateway", (req, res) => {
     console.log(req.body)
-    res.send(req.body)
+    res.send("success cpgateway post")
 });
 
 
