@@ -12,6 +12,7 @@ app.get("/", (req, res) => {
         status: true,
         data: { text: "hello" }
     }
+    console.log("asodakosdkopaks")
     res.json(responseObject);
 });
 
