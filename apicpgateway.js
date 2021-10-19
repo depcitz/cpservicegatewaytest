@@ -30,15 +30,15 @@ app.get("/", (req, res) => {
 });
 
 
-// app.get("/cpgateway", (req, res) => {
-//     console.log(req.body)
-//     res.send(req.body)
-// });
+app.get("/cpgateway", (req, res) => {
+    console.log(req.body)
+    res.send(req.body)
+});
 
-// app.post("/cpgateway", (req, res) => {
-//     console.log(req.body)
-//     res.send(req.body)
-// });
+app.post("/cpgateway", (req, res) => {
+    console.log(req.body)
+    res.send(req.body)
+});
 
 
 
